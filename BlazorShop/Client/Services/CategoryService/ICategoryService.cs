@@ -8,7 +8,7 @@ namespace BlazorShop.Client.Services.CategoryService
 {
     interface ICategoryService
     {
-        public List<Category> Categories { get; set; }
-        void LoadCategories();
+        List<Category> Categories { get; set; }
+        Task LoadCategories();
     }
 }
